@@ -4,12 +4,18 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "tsc": "tsc",
+    "start": "yarn tsc && electron .",
+    "dev": "yarn tsc && yarn server",
+    "server": "concurrently \"npx lite-server\" \"wait-on http://localhost:3000 && electron .\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^9.0.0"
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "electron": "^9.0.0",
+    "typescript": "^3.9.3",
+    "wait-on": "^5.0.0"
   }
 }

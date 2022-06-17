@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "electron": "^9.0.0",
+    "electron": "^15.5.5",
     "typescript": "^3.9.3",
     "wait-on": "^5.0.0"
   }
